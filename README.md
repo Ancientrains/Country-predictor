@@ -6,6 +6,9 @@ The main purpose of this file is the comparison between the three models(ffnn\XG
 The reason for why this is, is because I didn't really know what I was truly looking for at the time. It would be adhearent that the goal of the file is not to train and improve the models' performence even if there are clearly backward selection and ANOVA test done on the model, 
 It is to understand, explain and express where each model structure fails at and why. 
 
+## [edit]
+now that I looked over the model, I grasp what it being modeled. It is true that the goal is to understand why and where each model fails but it is done by concating the predition seperated by each model into a whole new catagorical dataset that is sparce, then with each predictor ffnn, xgbootst, ffnn x contries, xgboost x contries .ect I then fitted a model using the error calculated from the true and the predicted to a linear model. which provided information on each parameter and then is able to make statistcal inference on. ie i fitted the expected prediction error for a (model × country/region × outcome) combination, conditional on contextual factors, using held-out test predictions. I hope this would help you make sense of all this crap. 
+
 below is a generated steps of what I think i had done, since i believe that it can explain it better than me at this moment. 
 (note, this will not be a recurring event as the other projects are more recent and this is quite long ago)
 ## What This Script Does
